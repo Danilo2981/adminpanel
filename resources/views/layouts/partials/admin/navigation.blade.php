@@ -1,4 +1,4 @@
-<nav class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 sticky top-0">
+<nav class="bg-gray-100 dark:bg-blueprev-800 border-b border-gray-100 dark:border-gray-700 sticky top-0">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -12,17 +12,17 @@
             </div>                        
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center sm:hidden">
+                <div class="shrink-0 flex items-center sm:hidden shadow-gray-100">
                     <a href="/">
-                        <x-application-mark class="block h-9 w-auto" />
+                        <x-application-mark class="block h-9 mx-auto " />
                     </a>
                 </div>    
             </div>
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 @auth
                 <div class="mr-2">
-                    <i id="moon" class="setMode cursor-pointer fa-solid fa-moon" @click="toggle" :class="{'block': !show, 'hidden': show}"></i>
-                    <i id="sun" class="setMode cursor-pointer fa-regular fa-sun text-white" @click="toggle" :class="{'hidden': !show, 'block': show}"></i>
+                    <i id="moon" class="setMode cursor-pointer fa-solid fa-moon text-blueprev-800" @click="toggle" :class="{'block': !show, 'hidden': show}"></i>
+                    <i id="sun" class="setMode cursor-pointer fa-regular fa-sun text-yellowlog" @click="toggle" :class="{'hidden': !show, 'block': show}"></i>
                 </div>
                 <!-- Settings Dropdown -->
                 <div class="ml-3 relative">
@@ -34,7 +34,7 @@
                                 </button>
                             @else
                                 <span class="inline-flex rounded-md">
-                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
                                         {{ Auth::user()->name }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -81,12 +81,12 @@
                 @if (Route::has('login'))
                 <div class="ml-3 relative">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
                         @endif
                     @endauth
                 </div>
