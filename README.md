@@ -69,3 +69,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # previntech2.0
 # previntech2.0
 # previntech3.0
+# adminpanel
