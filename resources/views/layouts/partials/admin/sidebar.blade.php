@@ -1,5 +1,5 @@
 <aside class="w-64 sticky top-0 z-10 bg-gray-100 dark:bg-blueprev-800">
-    <div class="bg-blue-500 px-2 py-2 h-screen">
+    <div class="px-2 py-2 h-screen">
         <div class="flex flex-col h-full justify-between px-3 py-4 bg-yellowlog dark:bg-gray-600 rounded-md">
             <div class="top-0 z-10 px-4 py-2 mb-4 bg-yellowlog rounded-md">
                 <a href="/" class="flex items-center pl-2.5 mb-1">
