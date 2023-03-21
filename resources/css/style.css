@@ -1,14 +1,28 @@
 /* Aplicar las directivas de Tailwind para la barra de desplazamiento */
 ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #1F2937;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #ffffff;
-    border-radius: 6px;
-    border: 3px solid #2d2d2d;
-  }
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6C058;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 3px solid #F6C058;
+}
+
+.dark ::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+.dark ::-webkit-scrollbar-track {
+background: #4b5563;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+background-color: #ffffff;
+border-radius: 6px;
+border: 3px solid #4b5563;
+}

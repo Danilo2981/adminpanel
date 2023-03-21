@@ -41,7 +41,7 @@
                     'url' => route('admin.dashboard'),
                     'active' => request()->routeIs('admin.dashboard'),
                     'icon' => 'fa-solid fa-gauge'
-                ]
+                ],
             ];
         @endphp
 
